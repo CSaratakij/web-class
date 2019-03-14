@@ -1,9 +1,18 @@
 var id = 0;
 var source = [
     "./res/video/gallery.mp4",
-    "./res/video/gallery.mp4",
-    "./res/video/gallery.mp4",
+    "./res/video/gallery1.mp4",
+    "./res/video/gallery2.mp4",
 ]
+
+function init() {
+    var video = document.getElementById("video-player");
+    video.addEventListener("ended", onVideoEnded, false);
+}
+
+function onVideoEnded() {
+    nextSource();
+}
 
 function selectSource(_id) {
     id = _id;
