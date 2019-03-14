@@ -3,6 +3,7 @@
         <title>CSaratakij : Gallery</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
+        <script src="./js/slideshow.js"></script>
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
@@ -24,27 +25,23 @@
                 </ul>
             </nav>
             <div class="content-box">
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
-                <p class="content">Test</p>
+                <div class="video-container">
+                    <video id="video-player" class="gallery-video" autoplay muted loop>
+                      <source src="./res/video/gallery.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="video-control-left" onclick="previousSource()"><</button>
+                        <button class="video-control-right" onclick="nextSource()">></button>
+                    </div>
+                </div>
+            </div>
+            <div class="video-indicator-container">
+                <span onclick="selectSource(0) "id="indicator-1" class="video-indicator-active"></span>
+                <span onclick="selectSource(1) "id="indicator-2" class="video-indicator"></span>
+                <span onclick="selectSource(2)" id="indicator-3" class="video-indicator"></span>
+            </div>
+            <div style="">
             </div>
         </div>
         <div>
