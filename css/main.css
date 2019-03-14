@@ -117,8 +117,14 @@ p.footer {
 }
 
 .gallery-video {
-    width: 80%;
+    width: 85%;
     opacity: 1.0;
+}
+
+@media screen and (max-width: 600px) {
+  video.gallery-video {
+    width: 100%;
+  }
 }
 
 button.video-control-left {
